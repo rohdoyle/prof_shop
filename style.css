@@ -1,0 +1,129 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --background-color: #f0f4f8;
+  --text-color: #333;
+  --button-color: var(--primary-color);
+  --button-hover: #357abd;
+  --border-radius: 8px;
+}
+
+body {
+  font-family: 'Vazir', Tahoma, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0 1rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background: var(--primary-color);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.product {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.plan {
+  background: #f7f7f7;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plan strong {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.plan span {
+  font-weight: 600;
+  color: #222;
+}
+
+.buy-button {
+  background-color: var(--button-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.buy-button:hover {
+  background-color: var(--button-hover);
+}
+
+#contact {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  padding: 1rem;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#contact h3 {
+  color: var(--primary-color);
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  filter: none; /* فقط تلگرام */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0 2rem;
+  color: var(--primary-color);
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logo-name img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
